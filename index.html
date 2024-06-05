@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="tab">
+            <button class="active">Sign Up</button>
+            <button id="loginBtn">Log In</button>
+        </div>
+        <h2>Sign Up for Free</h2>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Set A Password" required>
+            <button type="submit">GET STARTED</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginBtn").addEventListener("mouseover", function(){
+            this.style.color = "#00a084";
+        });
+        document.getElementById("loginBtn").addEventListener("mouseout", function(){
+            this.style.color = "#bbb";
+        });
+    </script>
+</body>
+</html>
